@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Pizza Forna e Fuoco</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/pizza.css" type="text/css">
+</head>
+<body>
+    <?php include 'headerNotLogin.html'; ?>
+    <div class="login_container">
+
+        <form action="CustomerLogin.php" method="post">
+            <p>Login to place your order:</p>
+            <div>
+                <label>Email:</label><br />
+                <input type="email" name="cemail" value="">
+            </div>
+            <div>
+                <label>Password:</label><br />
+                <input type="password" name="cpassword" value="">
+            </div>
+            <br>
+            <input type="submit" value="Login" name="login" id="login_button">
+            <p>or</p>
+            <a href="signupPage.php">Sign Up</a>
+        </form>
+
+    </div>
+
+    <?php include 'footer.html'; ?>
+
+</body>
+</html>
